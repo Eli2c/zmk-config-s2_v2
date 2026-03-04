@@ -1,0 +1,20 @@
+
+if SHIELD_ERGO_WIRELESS_LEFT || SHIELD_ERGO_WIRELESS_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
+
+if SHIELD_ERGO_WIRELESS_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "ec_s2_v2"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_STUDIO
+    default y
+
+endif
